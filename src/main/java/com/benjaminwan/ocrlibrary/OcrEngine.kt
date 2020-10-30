@@ -35,7 +35,10 @@ class OcrEngine() {
         isDebugImg: Boolean,
         isResultImg: Boolean
     )
-    external fun initModels(path: String): Boolean
+
+    external fun enableResultText(imagePath: String)
+
+    external fun initModels(modelsDir: String): Boolean
 
     external fun getVersion(): String
 
