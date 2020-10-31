@@ -16,4 +16,4 @@ echo "Setting the Number of Threads=$NUM_THREADS Using an OpenMP Environment Var
 set OMP_NUM_THREADS=$NUM_THREADS
 
 ##### run test on MacOS or Linux
-java -Djava.library.path=. -jar OcrLiteJava.jar models test_imgs/1.jpg
+java -Djava.library.path=. -jar OcrLiteJvm.jar models test_imgs/1.jpg

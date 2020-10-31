@@ -3,7 +3,7 @@ package com.benjaminwan.ocr;
 import com.benjaminwan.ocrlibrary.OcrEngine;
 import com.benjaminwan.ocrlibrary.OcrResult;
 
-public class Demo {
+public class Main {
     public static void main(String[] args) {
         String jniLibDir = System.getProperty("java.library.path");
         System.out.println("java.library.path=" + jniLibDir);

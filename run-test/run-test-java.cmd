@@ -6,6 +6,6 @@ echo "Setting the Number of Threads=%NUMBER_OF_PROCESSORS% Using an OpenMP Envir
 set OMP_NUM_THREADS=%NUMBER_OF_PROCESSORS%
 
 :: run Win x64
-java -Djava.library.path=. -Dfile.encoding=UTF-8 -jar OcrLiteJava.jar models test_imgs/1.jpg
+java -Djava.library.path=. -Dfile.encoding=UTF-8 -jar OcrLiteJvm.jar models test_imgs/1.jpg
 PAUSE
 @ENDLOCAL
