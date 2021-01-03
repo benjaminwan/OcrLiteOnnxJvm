@@ -15,5 +15,5 @@ set OMP_NUM_THREADS=$NUM_THREADS
 ##### run test on MacOS or Linux
 #pushd cmake-build-debug
 valgrind --trace-children=yes --tool=memcheck --leak-check=full --leak-resolution=med --track-origins=yes --vgdb=no --log-file=valgrind-memcheck.txt \
-java -Djava.library.path=. -jar OcrLiteJvm.jar models test_imgs/1.jpg
+java -Djava.library.path=. -jar OcrLiteOnnxJvm.jar models test_imgs/1.jpg
 #popd

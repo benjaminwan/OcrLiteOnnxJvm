@@ -16,7 +16,7 @@ public class Main {
         //------- init models/dir image/path -------
         String modelsDir = args[0];
         String imagePath = args[1];
-        System.out.println(String.format("modelsDir=%s, imagePath=%s", modelsDir, imagePath));
+        System.out.printf("modelsDir=%s, imagePath=%s", modelsDir, imagePath);
 
         //------- numThread -------
         int numThread = 4;

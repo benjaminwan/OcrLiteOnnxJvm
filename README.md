@@ -24,13 +24,13 @@
 8. 编译为jar包(以Kotlin为例)：在菜单栏找到Project Structure
 * 转到“Artifacts”选项卡
 * 按“+”号新建配置，Add->Jar->Empty
-* 编辑Name:OcrLiteJvm，下面列表左边的名称也会对应改为“OcrLiteJvm.jar”，这是最终输出的文件名
-* 选中左边列表的“OcrLiteJvm.jar”，底部出现两个按钮，选择“Use Existing Manifest...”，选择src/main/resources/META-INF/MANIFEST.MF
-* 展开右边列表，找到OcrLiteJvm/main/“OcrLiteJvm.main compile output”，右键“Put into Output Root”
+* 编辑Name:OcrLiteJvm，下面列表左边的名称也会对应改为“OcrLiteOnnxJvm.jar”，这是最终输出的文件名
+* 选中左边列表的“OcrLiteOnnxJvm.jar”，底部出现两个按钮，选择“Use Existing Manifest...”，选择src/main/resources/META-INF/MANIFEST.MF
+* 展开右边列表，找到OcrLiteOnnxJvm/main/“OcrLiteOnnxJvm.main compile output”，右键“Put into Output Root”
 * 选中右边列表的三个Gradle依赖包，分别是“kotlin-stdlib-common:1.3.72”/“kotlin-stdlib-1.3.72”/“annotations:13.0”，右键“Extract Into Output Root”
 * 按“OK”关闭项目设置窗口
 * 打开菜单栏Build->Build Artifacts，找到刚才的配置，并选Build
-* 找到out/artifacts/OcrLiteJvm/OcrLiteJvm.jar，并复制到run-test文件夹
+* 找到out/artifacts/OcrLiteOnnxJvm/OcrLiteOnnxJvm.jar，并复制到run-test文件夹
 * 测试jar包是否正确编译，在run-test文件夹中运行
 ```
 windows:run-test-java.cmd
