@@ -39,7 +39,7 @@ public class Main {
         ocrEngine.setBoxScoreThresh(0.6f);//文字框置信度门限，文字框没有正确框住所有文字时，减小此值
         ocrEngine.setBoxThresh(0.3f); //请自行试验
         ocrEngine.setMiniArea(3f); //请自行试验
-        ocrEngine.setUnClipRatio(1.8f); //单个文字框大小倍率，越大时单个文字框越大
+        ocrEngine.setUnClipRatio(2.0f); //单个文字框大小倍率，越大时单个文字框越大
         ocrEngine.setDoAngle(true); //启用(1)/禁用(0) 文字方向检测，只有图片倒置的情况下(旋转90~270度的图片)，才需要启用文字方向检测
         ocrEngine.setMostAngle(true); //启用(1)/禁用(0) 角度投票(整张图片以最大可能文字方向来识别)，当禁用文字方向检测时，此项也不起作用
         //------- start detect -------
