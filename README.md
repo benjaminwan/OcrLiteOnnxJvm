@@ -33,7 +33,7 @@
 * 找到out/artifacts/OcrLiteOnnxJvm/OcrLiteOnnxJvm.jar，并复制到run-test文件夹
 * 测试jar包是否正确编译，在run-test文件夹中运行
 ```
-windows:run-test-java.cmd
+windows:run-test-java.bat
 mac或linx:./run-test-java.sh
 ```
 
