@@ -24,7 +24,9 @@
 6. IDEA中直接在在main方法左边点击绿色的运行图标，可以直接调试运行范例，但此时没有输入参数。
 * 编辑运行参数：顶部工具栏“运行”图标左边，点开下拉菜单“Edit Configurations”
 * VM options:添加```-Djava.library.path=run-test```，把run-test文件夹加到java的lib搜索路径
-* Program arguments:添加``run-test/models run-test/images/1.jpg```，添加命令行输入参数，传入models文件夹和目标图片
+* Program arguments:添加``run-test/models dbnet.onnx angle_net.onnx crnn_lite_lstm.onnx keys.txt run-test/images/1.jpg```，添加命令行输入参数
+* 命令行参数models文件夹里必须有相应的模型文件，接下来的四个文件名对应模型文件夹里的3个模型(含扩展名)和1个keys文件，请确认文件名无误
+* run-test/images/1.jpg是待识别的目标图片
 * 点击运行，正常的话就可以输出识别结果。
 8. 编译为jar包(以Kotlin为例)：在菜单栏找到Project Structure
 * 转到“Artifacts”选项卡
@@ -36,11 +38,7 @@
 * 按“OK”关闭项目设置窗口
 * 打开菜单栏Build->Build Artifacts，找到刚才的配置，并选Build
 * 找到out/artifacts/OcrLiteOnnxJvm/OcrLiteOnnxJvm.jar，并复制到run-test文件夹
-* 测试jar包是否正确编译，在run-test文件夹中运行
-```
-windows:run-test-java.bat
-mac或linx:./run-test-java.sh
-```
+* 测试jar包是否正确编译：顶部Demo下载解压，把编译出来的jar包复制替换进去，然后使用run-test脚本测试。
 
 ### 其它问题
 windows部署时如果运行显示错误can’t find dependent libraries
