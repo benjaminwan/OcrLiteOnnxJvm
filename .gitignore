@@ -144,6 +144,7 @@ build-win/
 /run-test/test_imgs/*-result.txt
 /run-test/models/*.onnx
 /run-test/*.dll
+/run-test/*.lib
 /run-test/*.jar
 /run-test/*.dylib
 /run-test/valgrind-memcheck.txt
