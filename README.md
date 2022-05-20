@@ -8,7 +8,7 @@
 
 ### Demo下载(win、mac、linux)
 
-编译好的demo文件比较大，可以到Q群共享内下载 或者[Gitee下载](https://gitee.com/benjaminwan/ocr-lite-onnx-jvm/releases)
+编译好的demo，可以到Q群共享内下载 或者[Gitee下载](https://gitee.com/benjaminwan/ocr-lite-onnx-jvm/releases)
 
 ### 介绍
 
@@ -22,7 +22,7 @@
 
 ### 调试&编译说明
 
-1. 开始JVM部分编译之前，请先完成编译OcrLiteOnnx动态运行库，参考[此页面](https://github.com/ouyanghuiyu/chineseocr_lite/tree/onnx/pc_projects/OcrLiteOnnx)的编译说明。
+1. 开始JVM部分编译之前，请先完成编译OcrLiteOnnx动态运行库，参考[此页面](https://github.com/benjaminwan/OcrLiteOnnx/blob/master/BUILD.md)的编译说明。
 2. 把预先编译好的动态运行库复制到run-test文件夹，根据您选择的编译类型，macOS、linux可能还需要额外配置动态库的搜索路径
 3. 从第1步的说明中找到模型下载地址，放到run-test/models文件夹，测试的目标图片放到run-test/images文件夹
 4. 用IDEA打开本项目
